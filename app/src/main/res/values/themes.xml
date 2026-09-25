@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.UII_Practica_Angel_Hernandez" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>
