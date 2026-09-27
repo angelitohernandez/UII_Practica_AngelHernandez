@@ -5,6 +5,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import mx.edu.utez.angel.ui.screens.amigos.AmigosScreen
 import mx.edu.utez.angel.ui.screens.conversor.ConversorScreen
 import mx.edu.utez.angel.ui.screens.menu.MenuScreen
 import mx.edu.utez.angel.ui.screens.propinas.PropinasScreen
@@ -16,10 +17,9 @@ sealed class Route(val path: String) {
     object Menu : Route("menu")
     object Conversor : Route("conversor")
     object Propinas : Route("propinas")
-
     object Calculadora : Route("calculadora")
-
     object Galeria : Route("galeria")
+    object Amigos : Route("amigos")
 }
 
 @Composable
@@ -38,7 +38,8 @@ fun AppNavGraph(
                 onNavigateToConversor = { navController.navigate(Route.Conversor.path) },
                 onNavigateToPropinas = { navController.navigate(Route.Propinas.path) },
                 onNavigateToCalculadora = { navController.navigate(Route.Calculadora.path) },
-                onNavigateToGaleria = { navController.navigate(Route.Galeria.path) }
+                onNavigateToGaleria = { navController.navigate(Route.Galeria.path) },
+                onNavigateToAmigos = { navController.navigate(Route.Amigos.path) }
             )
         }
 
@@ -64,6 +65,10 @@ fun AppNavGraph(
         // 5. Galeria de fotos
         composable(Route.Galeria.path) {
             GaleriaScreen(onBackClick = { navController.popBackStack() })
+        }
+        // 5. Mejores Amigos
+        composable(Route.Amigos.path) {
+            AmigosScreen(onBackClick = { navController.popBackStack() })
         }
     }
 }

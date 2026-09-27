@@ -28,7 +28,8 @@ fun MenuScreen(
     onNavigateToPropinas: () -> Unit,
     modifier: Modifier = Modifier,
     onNavigateToCalculadora: () -> Unit,
-    onNavigateToGaleria: () -> Unit
+    onNavigateToGaleria: () -> Unit,
+    onNavigateToAmigos: () -> Unit
 ) {
     Column(
         modifier = modifier
@@ -93,6 +94,15 @@ fun MenuScreen(
                 .padding(vertical = 8.dp)
         ) {
             Text("Galeria")
+        }
+        // Botón hacia Amigos
+        Button(
+            onClick = onNavigateToAmigos,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(vertical = 8.dp)
+        ) {
+            Text("Mis Amigos")
         }
     }
 }
