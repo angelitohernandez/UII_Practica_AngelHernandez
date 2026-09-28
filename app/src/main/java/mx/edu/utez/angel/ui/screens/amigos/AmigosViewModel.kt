@@ -24,9 +24,9 @@ class AmigosViewModel : ViewModel() {
     init {
         val amigo1 = Amigo(id = 1, nombreCompleto = "Sebastian Martinez", edad = 19, fechaNacimiento = "09/08/07", esMejorAmigo = true)
         val amigo2 = Amigo(id = 2, nombreCompleto = "Miguel Chavez", edad = 20, fechaNacimiento = "26/09/26", esMejorAmigo = true)
-        val amigo3 = Amigo(id = 3, nombreCompleto = "Gerardo Barron", edad = 19, fechaNacimiento = "25/09/07", esMejorAmigo = true)
-        val amigo4 = Amigo(id = 4, nombreCompleto = "Josue Hernandez", edad = 19, fechaNacimiento = "11/12/07", esMejorAmigo = true)
-        val amigo5 = Amigo(id = 5, nombreCompleto = "Josue Pantaleon", edad = 20, fechaNacimiento = "02/08/06", esMejorAmigo = true)
+        val amigo3 = Amigo(id = 3, nombreCompleto = "Gerardo Barron", edad = 19, fechaNacimiento = "05/01/07", esMejorAmigo = true)
+        val amigo4 = Amigo(id = 4, nombreCompleto = "Josue Hernandez", edad = 19, fechaNacimiento = "22/10/07", esMejorAmigo = true)
+        val amigo5 = Amigo(id = 5, nombreCompleto = "Josue Pantaleon", edad = 20, fechaNacimiento = "23/09/06", esMejorAmigo = true)
 
         _elementos.value = listOf(amigo1, amigo2, amigo3, amigo4, amigo5)
     }
